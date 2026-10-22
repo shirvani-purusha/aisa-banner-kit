@@ -15,10 +15,10 @@ BannerKit.presentation = {
     title: 'Coffee and Conversation · banner review package (DRAFT v0.1)',
     intro: 'Proposed AISA × Howard Thurman Center collaboration. All bracketed items are unconfirmed. Review mockups only; no public-release variant exists. Companion documents:',
     links: [
-      { label: 'specification', href: '../project/DRAFT_specification.md' },
-      { label: 'accessibility review', href: '../project/DRAFT_accessibility_review.md' },
-      { label: 'text companion and alt text', href: '../project/DRAFT_text_companion_and_alt_text.md' },
-      { label: 'approval checklist and export manifest', href: '../project/DRAFT_approval_checklist_and_export_manifest.md' },
+      { label: 'specification', href: 'https://github.com/shirvani-purusha/aisa-banner-kit/blob/main/project/DRAFT_specification.md' },
+      { label: 'accessibility review', href: 'https://github.com/shirvani-purusha/aisa-banner-kit/blob/main/project/DRAFT_accessibility_review.md' },
+      { label: 'text companion and alt text', href: 'https://github.com/shirvani-purusha/aisa-banner-kit/blob/main/project/DRAFT_text_companion_and_alt_text.md' },
+      { label: 'approval checklist and export manifest', href: 'https://github.com/shirvani-purusha/aisa-banner-kit/blob/main/project/DRAFT_approval_checklist_and_export_manifest.md' },
     ],
   },
 
