@@ -1,0 +1,52 @@
+/*
+  FORMAT · 1920 × 1080 measurements
+  8 columns × 188 px, 32 px gutters inside 1728 px. Safe margin 96 px.
+*/
+.bk-banner--1920x1080 .bk-strip { height: 64px; padding: 0 96px; }
+.bk-banner--1920x1080 .bk-strip__text { font-size: 24px; }
+.bk-banner--1920x1080 .bk-strip__note { font-size: 20px; }
+
+/* Text column: x 96–1164 */
+.bk-banner--1920x1080 .bk-region--text {
+  left: 96px; top: 160px; width: 1068px;
+  display: flex; flex-direction: column; gap: 24px;
+}
+.bk-banner--1920x1080 .bk-program { gap: 20px; }
+.bk-banner--1920x1080 .bk-program__label { font-size: 24px; }
+.bk-banner--1920x1080 .bk-tag { font-size: 18px; padding: 7px 12px 6px; }
+
+/* Headline: max 2 lines ≈ 40 characters */
+.bk-banner--1920x1080 .bk-headline { font-size: 96px; line-height: 1.05; }
+.bk-banner--1920x1080 .bk-headline.is-unconfirmed { padding: 8px 20px; }
+/* Description: max 2 lines ≈ 110 characters */
+.bk-banner--1920x1080 .bk-description { font-size: 34px; max-width: 980px; }
+.bk-banner--1920x1080 .bk-description.is-unconfirmed { padding: 6px 14px; }
+
+.bk-banner--1920x1080 .bk-detail__label { font-size: 20px; }
+.bk-banner--1920x1080 .bk-detail--datetime { margin-top: 8px; }
+.bk-banner--1920x1080 .bk-detail--datetime .bk-detail__value { font-size: 40px; line-height: 1.2; max-width: 1000px; }
+.bk-banner--1920x1080 .bk-detail--datetime .bk-pending { padding: 0 12px; }
+/* Venue: max 1 line ≈ 60 characters */
+.bk-banner--1920x1080 .bk-detail--venue .bk-detail__value { font-size: 30px; line-height: 1.2; }
+.bk-banner--1920x1080 .bk-detail--venue .bk-pending { padding: 2px 12px; }
+
+/* Graphic: cols 6–8, x 1196–1824 */
+.bk-banner--1920x1080 .bk-graphic { position: absolute; left: 1196px; top: 160px; }
+
+/* Bottom row, aligned to the bottom safe margin (y 984) */
+.bk-banner--1920x1080 .bk-region--footer {
+  left: 96px; right: 96px; bottom: 96px;
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 48px;
+}
+.bk-banner--1920x1080 .bk-attribution { gap: 16px; }
+.bk-banner--1920x1080 .bk-attribution__header { gap: 16px; }
+.bk-banner--1920x1080 .bk-attribution__label { font-size: 20px; }
+.bk-banner--1920x1080 .bk-cobrand-tag { font-size: 16px; padding: 6px 10px 5px; }
+.bk-banner--1920x1080 .bk-partner { font-size: 34px; }
+.bk-banner--1920x1080 .bk-logos { gap: 24px; }
+.bk-banner--1920x1080 .bk-logo-slot { width: 200px; height: 72px; font-size: 15px; padding: 0 12px; }
+
+.bk-banner--1920x1080 .bk-cta-group { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.bk-banner--1920x1080 .bk-cta { font-size: 26px; padding: 20px 32px; }
+.bk-banner--1920x1080 .bk-cta-note { font-size: 18px; text-align: right; }
+.bk-banner--1920x1080 .bk-cta-note .bk-pending { padding: 2px 10px; }

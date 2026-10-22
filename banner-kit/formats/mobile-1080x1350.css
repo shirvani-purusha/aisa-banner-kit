@@ -1,0 +1,43 @@
+/*
+  FORMAT · 1080 × 1350 mobile measurements
+  Safe margin 64 px. One 952 px column from y 120 to 1286, gap 24 px.
+*/
+.bk-banner--mobile-1080x1350 .bk-strip { height: 56px; padding: 0 64px; }
+.bk-banner--mobile-1080x1350 .bk-strip__text { font-size: 22px; }
+
+.bk-banner--mobile-1080x1350 .bk-region--text {
+  left: 64px; top: 120px; width: 952px; height: 1166px;
+  display: flex; flex-direction: column; gap: 24px;
+}
+.bk-banner--mobile-1080x1350 .bk-program { gap: 16px; flex-wrap: wrap; }
+.bk-banner--mobile-1080x1350 .bk-program__label { font-size: 24px; }
+.bk-banner--mobile-1080x1350 .bk-tag { font-size: 17px; padding: 7px 12px 6px; }
+
+.bk-banner--mobile-1080x1350 .bk-headline { font-size: 78px; line-height: 1.08; }
+.bk-banner--mobile-1080x1350 .bk-headline.is-unconfirmed { padding: 6px 16px; }
+.bk-banner--mobile-1080x1350 .bk-description { font-size: 30px; }
+.bk-banner--mobile-1080x1350 .bk-description.is-unconfirmed { padding: 6px 12px; }
+
+.bk-banner--mobile-1080x1350 .bk-detail__label { font-size: 18px; }
+.bk-banner--mobile-1080x1350 .bk-detail--datetime { margin-top: 8px; }
+.bk-banner--mobile-1080x1350 .bk-detail--datetime .bk-detail__value { font-size: 36px; line-height: 1.25; }
+.bk-banner--mobile-1080x1350 .bk-detail--datetime .bk-pending { padding: 0 12px; }
+.bk-banner--mobile-1080x1350 .bk-detail--venue .bk-detail__value { font-size: 28px; line-height: 1.2; }
+.bk-banner--mobile-1080x1350 .bk-detail--venue .bk-pending { padding: 2px 12px; }
+
+/* Graphic sits in the column flow between venue and attribution */
+.bk-banner--mobile-1080x1350 .bk-graphic { margin: 8px 0; }
+
+/* Attribution and CTA pinned to the bottom of the column */
+.bk-banner--mobile-1080x1350 .bk-footer { margin-top: auto; display: flex; flex-direction: column; gap: 14px; }
+.bk-banner--mobile-1080x1350 .bk-attribution__header { gap: 14px; flex-wrap: wrap; }
+.bk-banner--mobile-1080x1350 .bk-attribution__label { font-size: 18px; }
+.bk-banner--mobile-1080x1350 .bk-cobrand-tag { font-size: 14px; padding: 5px 9px 4px; }
+.bk-banner--mobile-1080x1350 .bk-partner { font-size: 30px; }
+.bk-banner--mobile-1080x1350 .bk-logos { gap: 16px; }
+.bk-banner--mobile-1080x1350 .bk-logo-slot { width: 180px; height: 64px; font-size: 14px; padding: 0 10px; }
+
+.bk-banner--mobile-1080x1350 .bk-cta-group { margin-top: 8px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.bk-banner--mobile-1080x1350 .bk-cta { font-size: 24px; padding: 18px 28px; }
+.bk-banner--mobile-1080x1350 .bk-cta-note { font-size: 17px; }
+.bk-banner--mobile-1080x1350 .bk-cta-note .bk-pending { padding: 2px 10px; }

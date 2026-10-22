@@ -1,0 +1,54 @@
+/*
+  FORMAT · 1920 × 640 measurements
+  Safe margin 64 px. Content band y 112–576. Columns: text x 64–964 (900),
+  details x 1028–1488 (460), graphic x 1524–1856 (332). 64 px column gaps.
+*/
+.bk-banner--1920x640 .bk-strip { height: 48px; padding: 0 64px; }
+.bk-banner--1920x640 .bk-strip__text { font-size: 20px; }
+.bk-banner--1920x640 .bk-strip__note { font-size: 17px; }
+
+/* Text column */
+.bk-banner--1920x640 .bk-region--text {
+  left: 64px; top: 112px; width: 900px; height: 464px;
+  display: flex; flex-direction: column; gap: 20px;
+}
+.bk-banner--1920x640 .bk-program { gap: 16px; }
+.bk-banner--1920x640 .bk-program__label { font-size: 20px; }
+.bk-banner--1920x640 .bk-tag { font-size: 15px; padding: 6px 10px 5px; }
+
+/* Headline: max 2 lines ≈ 44 characters */
+.bk-banner--1920x640 .bk-headline { font-size: 60px; line-height: 1.05; }
+.bk-banner--1920x640 .bk-headline.is-unconfirmed { padding: 4px 14px; }
+/* Description: max 2 lines ≈ 100 characters */
+.bk-banner--1920x640 .bk-description { font-size: 26px; max-width: 860px; }
+.bk-banner--1920x640 .bk-description.is-unconfirmed { padding: 4px 10px; }
+
+/* Attribution pinned to the bottom of the text column */
+.bk-banner--1920x640 .bk-attribution-row { margin-top: auto; display: flex; align-items: flex-end; gap: 24px; }
+.bk-banner--1920x640 .bk-attribution { gap: 10px; }
+.bk-banner--1920x640 .bk-attribution__header { gap: 12px; }
+.bk-banner--1920x640 .bk-attribution__label { font-size: 16px; }
+.bk-banner--1920x640 .bk-cobrand-tag { font-size: 13px; padding: 5px 8px 4px; }
+.bk-banner--1920x640 .bk-partner { font-size: 26px; }
+.bk-banner--1920x640 .bk-logos { gap: 16px; }
+.bk-banner--1920x640 .bk-logo-slot { width: 160px; height: 56px; font-size: 13px; padding: 0 10px; }
+
+/* Details column */
+.bk-banner--1920x640 .bk-region--details {
+  left: 1028px; top: 112px; width: 460px; height: 464px;
+  display: flex; flex-direction: column; gap: 24px;
+}
+.bk-banner--1920x640 .bk-detail__label { font-size: 16px; }
+.bk-banner--1920x640 .bk-detail--datetime .bk-detail__value { font-size: 30px; line-height: 1.25; }
+.bk-banner--1920x640 .bk-detail--datetime .bk-pending { padding: 0 10px; }
+.bk-banner--1920x640 .bk-detail--venue .bk-detail__value { font-size: 24px; line-height: 1.2; }
+.bk-banner--1920x640 .bk-detail--venue .bk-pending { padding: 2px 10px; }
+
+/* CTA pinned to the bottom of the details column */
+.bk-banner--1920x640 .bk-cta-group { margin-top: auto; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.bk-banner--1920x640 .bk-cta { font-size: 22px; padding: 16px 26px; }
+.bk-banner--1920x640 .bk-cta-note { font-size: 16px; }
+.bk-banner--1920x640 .bk-cta-note .bk-pending { padding: 2px 8px; }
+
+/* Graphic column (sacrificial: outside the focal region) */
+.bk-banner--1920x640 .bk-graphic { position: absolute; left: 1524px; top: 112px; }

@@ -1,0 +1,163 @@
+/*
+  IDENTITY LAYER · shared component styles
+  Everything that looks the same in every format: weights, tracking, case,
+  borders. Sizes, padding and positions are per format, in formats/*.css.
+*/
+
+.bk-banner {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: var(--bk-color-field);
+  color: var(--bk-color-ink);
+  font-family: var(--bk-font-sans);
+}
+
+.bk-region { position: absolute; }
+
+/* Status strip: the draft notice. Required on every artboard until approval. */
+.bk-strip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bk-color-ink);
+  color: var(--bk-color-field);
+}
+.bk-strip__text {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-strip);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+}
+.bk-strip__note {
+  font-weight: 500;
+  letter-spacing: var(--bk-track-strip-note);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+}
+
+/* Program label + in-field draft tag */
+.bk-program { display: flex; align-items: center; }
+.bk-program__label {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-program);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+  color: var(--bk-color-accent);
+}
+.bk-tag {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-tag);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+  border: var(--bk-outline);
+  border-radius: var(--bk-radius-pill);
+}
+
+/* Headline and description */
+.bk-headline {
+  margin: 0;
+  align-self: flex-start;
+  font-family: var(--bk-font-serif);
+  font-weight: 400;
+  letter-spacing: var(--bk-track-headline);
+  text-wrap: pretty;
+}
+.bk-headline.is-unconfirmed {
+  border: var(--bk-pending-border-strong);
+  border-radius: var(--bk-radius-box-lg);
+}
+.bk-description {
+  margin: 0;
+  align-self: flex-start;
+  font-weight: 400;
+  line-height: var(--bk-leading-description);
+  text-wrap: pretty;
+}
+.bk-description.is-unconfirmed {
+  border: var(--bk-pending-border);
+  border-radius: var(--bk-radius-box);
+}
+
+/* Label-over-value details (date and time, venue) */
+.bk-detail { display: flex; flex-direction: column; gap: 8px; }
+.bk-detail__label {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-label);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+}
+.bk-detail--datetime .bk-detail__value { font-family: var(--bk-font-serif); }
+
+/* Separator dot, hidden by BannerKit.fixSeparators where a line breaks beside it */
+.bk-sep.is-line-end .bk-sep__mark { display: none; }
+
+/* Inline dashed box around an unconfirmed value */
+.bk-pending {
+  border: var(--bk-pending-border);
+  border-radius: var(--bk-radius-box);
+}
+.bk-detail--datetime .bk-pending,
+.bk-cta-note .bk-pending { white-space: nowrap; }
+
+/* Attribution: partner line, co-branding tag, logo slots */
+.bk-attribution { display: flex; flex-direction: column; }
+.bk-attribution__header { display: flex; align-items: center; }
+.bk-attribution__label {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-label);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+  white-space: nowrap;
+}
+.bk-cobrand-tag {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-tag);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-tight);
+  white-space: nowrap;
+  color: var(--bk-color-accent);
+  border: var(--bk-outline-accent);
+  border-radius: var(--bk-radius-box);
+}
+.bk-partner {
+  font-family: var(--bk-font-serif);
+  line-height: var(--bk-leading-partner);
+}
+.bk-logos { display: flex; }
+.bk-logo-slot {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: var(--bk-track-logo);
+  text-transform: uppercase;
+  line-height: var(--bk-leading-small);
+  border: var(--bk-pending-border);
+  border-radius: var(--bk-radius-box);
+}
+/* An approved logo replaces the dashed slot. Keep clear space equal to
+   the slot height around it and never scale it non-uniformly. */
+.bk-logo-slot.has-logo { border: 0; padding: 0; }
+.bk-logo-slot.has-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+/* Call to action */
+.bk-cta {
+  font-weight: 600;
+  letter-spacing: var(--bk-track-cta);
+  line-height: var(--bk-leading-tight);
+  white-space: nowrap;
+  border: var(--bk-outline-strong);
+  border-radius: var(--bk-radius-pill);
+}
+.bk-cta-note { line-height: var(--bk-leading-small); }
+
+/* Discussion graphic (event layer geometry lives in event/graphic.js) */
+.bk-graphic { display: block; }

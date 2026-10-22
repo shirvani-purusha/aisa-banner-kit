@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#EFE8E2} a{color:#2A7A57} a:hover{color:#1D1E20}</style>
+</helmet>
+<div style="padding:64px;display:flex;flex-direction:column;gap:72px;font-family:Barlow,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#1D1E20;width:max-content">
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:1400px">
+    <div style="display:inline-flex;align-self:flex-start;background:#1D1E20;color:#FFF8F3;font-size:18px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:12px 20px;line-height:1">DRAFT CONCEPT · EVENT AND CO-SPONSORSHIP UNCONFIRMED</div>
+    <h1 style="margin:0;font-family:'Libre Baskerville',Georgia,serif;font-weight:400;font-size:44px;line-height:1.15">Coffee and Conversation · banner review package (DRAFT v0.1)</h1>
+    <p style="margin:0;font-size:20px;line-height:1.5;max-width:1000px">Proposed AISA × Howard Thurman Center collaboration. All bracketed items are unconfirmed. Review mockups only; no public-release variant exists. Companion documents: <a href="DRAFT_specification.md">specification</a>, <a href="DRAFT_accessibility_review.md">accessibility review</a>, <a href="DRAFT_text_companion_and_alt_text.md">text companion and alt text</a>, <a href="DRAFT_approval_checklist_and_export_manifest.md">approval checklist and export manifest</a>.</p>
+  </div>
+
+  <section data-screen-label="Artboard 1" style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:baseline;gap:16px"><div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1D1E20">Artboard 1</div><div style="font-size:22px;font-weight:500">Main digital banner · 1920 × 1080 px · sRGB · 96 px safe margin</div></div>
+    <div id="art-1080" style="width:1920px;height:1080px;box-shadow:0 2px 24px rgba(29,30,32,0.12)"><dc-import name="DRAFT_Banner_1920x1080" hint-size="1920px,1080px"></dc-import></div>
+  </section>
+
+  <section data-screen-label="Artboard 2" style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:baseline;gap:16px"><div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1D1E20">Artboard 2</div><div style="font-size:22px;font-weight:500">Website banner · 1920 × 640 px · sRGB · 64 px safe margin · independently composed</div></div>
+    <div id="art-640" style="width:1920px;height:640px;box-shadow:0 2px 24px rgba(29,30,32,0.12)"><dc-import name="DRAFT_Banner_1920x640" hint-size="1920px,640px"></dc-import></div>
+  </section>
+
+  <section data-screen-label="Focal region and crop simulations" style="display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;align-items:baseline;gap:16px"><div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1D1E20">Website banner</div><div style="font-size:22px;font-weight:500">Focal region and crop simulations · site container and crop rules unknown; these are review simulations</div></div>
+    <div style="display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:16px;line-height:1.4;max-width:960px">Focal region (dashed green): x 0–1500 px, full height. Text, date, attribution and CTA sit inside it; the graphic on the right is sacrificial. The in-field "Draft · Unconfirmed" tag keeps the status visible if the top strip is cropped.</div>
+        <div style="position:relative;width:960px;height:320px;overflow:hidden;box-shadow:0 2px 12px rgba(29,30,32,0.12)">
+          <div style="position:absolute;left:0;top:0;width:1920px;height:640px;transform:scale(0.5);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x640" hint-size="1920px,640px"></dc-import></div>
+          <div style="position:absolute;left:0;top:0;width:750px;height:320px;border:3px dashed #2A7A57;box-sizing:border-box"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:16px;line-height:1.4;max-width:720px"><strong>Desktop, 1440 px container, contain.</strong> Whole banner at 75%. Smallest type: 15 px status strip, 11 px logo-slot labels (marginal).</div>
+        <div style="position:relative;width:1440px;height:480px;overflow:hidden;box-shadow:0 2px 12px rgba(29,30,32,0.12)">
+          <div style="position:absolute;left:0;top:0;width:1920px;height:640px;transform:scale(0.75);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x640" hint-size="1920px,640px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:16px;line-height:1.4;max-width:420px"><strong>Desktop hero, 1920 × 400 px container, cover-center.</strong> Top strip and lower rows are cut. The in-field draft tag and proposed-date label survive; attribution and CTA do not. Not acceptable without a dedicated 400 px-tall composition.</div>
+        <div style="position:relative;width:960px;height:200px;overflow:hidden;box-shadow:0 2px 12px rgba(29,30,32,0.12)">
+          <div style="position:absolute;left:0;top:-60px;width:1920px;height:640px;transform:scale(0.5);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x640" hint-size="1920px,640px"></dc-import></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:16px;line-height:1.4;max-width:390px"><strong>Narrow mobile, 390 × 130 px, contain.</strong> Whole banner at 20%. Headline renders at about 12 px, body at 5 px: unreadable.</div>
+        <div style="position:relative;width:390px;height:130px;overflow:hidden;box-shadow:0 2px 12px rgba(29,30,32,0.12)">
+          <div style="position:absolute;left:0;top:0;width:1920px;height:640px;transform:scale(0.203125);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x640" hint-size="1920px,640px"></dc-import></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:16px;line-height:1.4;max-width:390px"><strong>Narrow mobile, 390 × 220 px, cover-center.</strong> Banner at 34%, sides cropped by 135 px each. Headline about 21 px; date column cut in half. Unacceptable; use the separate mobile layout below instead.</div>
+        <div style="position:relative;width:390px;height:220px;overflow:hidden;box-shadow:0 2px 12px rgba(29,30,32,0.12)">
+          <div style="position:absolute;left:-135px;top:0;width:1920px;height:640px;transform:scale(0.34375);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x640" hint-size="1920px,640px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Mobile layout recommendation" style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:baseline;gap:16px"><div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1D1E20">Recommendation</div><div style="font-size:22px;font-weight:500">Separate mobile layout · 1080 × 1350 px shown as an illustration · platform dimensions unconfirmed</div></div>
+    <div style="display:flex;gap:48px;align-items:flex-start">
+      <div id="art-mobile" style="width:1080px;height:1350px;box-shadow:0 2px 24px rgba(29,30,32,0.12)"><dc-import name="DRAFT_Banner_Mobile_1080x1350" hint-size="1080px,1350px"></dc-import></div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:16px;line-height:1.4;max-width:390px">Same layout at a 390 px phone width (36%). Smallest live type is about 6 px here; raster use at this width is not recommended. If the site is responsive, rebuild as live HTML text at this breakpoint instead of serving an image.</div>
+        <div style="position:relative;width:390px;height:488px;overflow:hidden;box-shadow:0 2px 12px rgba(29,30,32,0.12)">
+          <div style="position:absolute;left:0;top:0;width:1080px;height:1350px;transform:scale(0.3611);transform-origin:top left"><dc-import name="DRAFT_Banner_Mobile_1080x1350" hint-size="1080px,1350px"></dc-import></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Color-blind and grayscale review" style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:baseline;gap:16px"><div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1D1E20">Accessibility</div><div style="font-size:22px;font-weight:500">Grayscale and deuteranopia simulations of Artboard 1 (35%) · hierarchy relies on size, weight, borders and marker shapes, not color alone</div></div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="deuteranopia"><feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.7 0.3 0 0 0  0 0.3 0.7 0 0  0 0 0 1 0"></feColorMatrix></filter></svg>
+    <div style="display:flex;gap:48px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:16px;font-weight:600">Grayscale</div><div style="position:relative;width:672px;height:378px;overflow:hidden;filter:grayscale(1);box-shadow:0 2px 12px rgba(29,30,32,0.12)"><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;transform:scale(0.35);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x1080" hint-size="1920px,1080px"></dc-import></div></div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:16px;font-weight:600">Deuteranopia (approximate matrix)</div><div style="position:relative;width:672px;height:378px;overflow:hidden;filter:url(#deuteranopia);box-shadow:0 2px 12px rgba(29,30,32,0.12)"><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;transform:scale(0.35);transform-origin:top left"><dc-import name="DRAFT_Banner_1920x1080" hint-size="1920px,1080px"></dc-import></div></div></div>
+    </div>
+  </section>
+
+  <section data-screen-label="Design rationale" style="display:flex;flex-direction:column;gap:20px;max-width:1400px">
+    <div style="display:flex;align-items:baseline;gap:16px"><div style="font-size:14px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#1D1E20">Rationale</div><div style="font-size:22px;font-weight:500">Identity layer, event layer, and unselected creative options</div></div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;font-size:17px;line-height:1.5">
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="font-weight:600">Reusable AISA identity layer (provisional, not an official brand guide)</div><div>Cream #FFF8F3 field, charcoal #1D1E20 text, deep green #2A7A57 emphasis. Libre Baskerville for headlines and dates, Barlow for labels and body. 8-column grid with 32 px gutters, 96 px / 64 px safe margins, small tracked uppercase labels over large serif values, 2 px dashed boxes for any unconfirmed content, 6 px stroke language for graphics.</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="font-weight:600">One-event theme layer (replaceable)</div><div>Event title, description, date/venue values, the discussion graphic, and the attribution partner line. The graphic used in the mockup is a neutral conversation treatment: three distinct paths (solid green, solid charcoal, dashed green, each ending in a different marker shape) entering one shared circular field. It does not depict coffee, refreshments, a topic, or any participant.</div></div>
+    </div>
+    <div style="border:2px solid #1D1E20;padding:24px;display:flex;flex-direction:column;gap:12px">
+      <div style="font-size:15px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Unselected creative options, not an approved topic</div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:16px;line-height:1.5">
+        <div><div style="font-family:'Libre Baskerville',Georgia,serif;font-size:22px;margin-bottom:6px">Perspectives in dialogue</div>Several paths of different stroke styles converging on one shared field (the treatment shown). Neutral; makes no claim about subject matter.</div>
+        <div><div style="font-family:'Libre Baskerville',Georgia,serif;font-size:22px;margin-bottom:6px">Technology in community</div>A small grid of nodes with a few deliberate connecting strokes, suggesting clubs and people around a common table. Not drawn; would need approved topic language to avoid implying an agenda.</div>
+        <div><div style="font-family:'Libre Baskerville',Georgia,serif;font-size:22px;margin-bottom:6px">Choices and consequences</div>A branching choice map: one path splitting into two or three outcomes. Not drawn; reads as a specific discussion frame and should wait for the approved title.</div>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#FFF8F3} a{color:#2A7A57} a:hover{color:#1D1E20}</style>
+</helmet>
+<div data-screen-label="Main digital banner 1920×1080 (DRAFT)" style="position:relative;width:1920px;height:1080px;background:#FFF8F3;color:#1D1E20;overflow:hidden;font-family:Barlow,'Helvetica Neue',Helvetica,Arial,sans-serif;box-sizing:border-box">
+  <div style="position:absolute;left:0;top:0;width:1920px;height:64px;background:#1D1E20;color:#FFF8F3;display:flex;align-items:center;justify-content:space-between;padding:0 96px;box-sizing:border-box">
+    <div style="font-size:24px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;line-height:1">DRAFT CONCEPT · EVENT AND CO-SPONSORSHIP UNCONFIRMED</div>
+    <div style="font-size:20px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;line-height:1">Internal review only · v0.1 · 22 Oct 2026</div>
+  </div>
+  <div style="position:absolute;left:96px;top:160px;width:1068px;display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;align-items:center;gap:20px">
+      <div style="font-size:24px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#2A7A57;line-height:1">Coffee and Conversation</div>
+      <div style="font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;line-height:1;border:2px solid #1D1E20;padding:7px 12px 6px;border-radius:999px">Draft · Unconfirmed</div>
+    </div>
+    <h1 style="margin:0;font-family:'Libre Baskerville',Georgia,'Times New Roman',serif;font-weight:400;font-size:96px;line-height:1.05;letter-spacing:-0.01em;text-wrap:pretty;border:3px dashed #1D1E20;padding:8px 20px;border-radius:6px;align-self:flex-start">{{ eventTitle }}</h1>
+    <p style="margin:0;font-size:34px;line-height:1.35;font-weight:400;max-width:980px;text-wrap:pretty;border:2px dashed #1D1E20;padding:6px 14px;border-radius:4px;align-self:flex-start">{{ description }}</p>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="font-size:20px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1">Proposed date and time</div>
+      <div style="font-family:'Libre Baskerville',Georgia,'Times New Roman',serif;font-size:40px;line-height:1.2;max-width:1000px">Friday, November 6, 2026 · 3:30 p.m. · <span style="border:2px dashed #1D1E20;padding:0 12px;border-radius:4px;white-space:nowrap">{{ timeZone }}</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="font-size:20px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1">Venue</div>
+      <div style="font-size:30px;line-height:1.2"><span style="border:2px dashed #1D1E20;padding:2px 12px;border-radius:4px">{{ venue }}</span></div>
+    </div>
+  </div>
+  <svg style="position:absolute;left:1196px;top:160px" width="628" height="620" viewBox="0 0 628 620" fill="none" aria-hidden="true">
+    <circle cx="460" cy="310" r="140" fill="#FFF8F3" stroke="#2A7A57" stroke-width="4"></circle>
+    <path d="M0 90 C 220 90 280 220 410 260" stroke="#2A7A57" stroke-width="6" stroke-linecap="round"></path>
+    <path d="M0 310 C 180 310 280 310 410 320" stroke="#1D1E20" stroke-width="6" stroke-linecap="round"></path>
+    <path d="M0 540 C 220 540 290 420 410 380" stroke="#2A7A57" stroke-width="6" stroke-linecap="round" stroke-dasharray="18 14"></path>
+    <circle cx="410" cy="260" r="11" fill="#2A7A57"></circle>
+    <rect x="399" y="309" width="22" height="22" fill="#1D1E20"></rect>
+    <rect x="399" y="369" width="22" height="22" fill="#FFF8F3" stroke="#2A7A57" stroke-width="4" transform="rotate(45 410 380)"></rect>
+  </svg>
+  <div style="position:absolute;left:96px;right:96px;bottom:96px;display:flex;justify-content:space-between;align-items:flex-end;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div style="font-size:20px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;line-height:1;white-space:nowrap">Proposed collaboration</div>
+        <div style="font-size:16px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;line-height:1;border:2px solid #2A7A57;color:#2A7A57;padding:6px 10px 5px;border-radius:4px;white-space:nowrap">Co-branding for approval</div>
+      </div>
+      <div style="font-family:'Libre Baskerville',Georgia,'Times New Roman',serif;font-size:34px;line-height:1.2">AISA × Howard Thurman Center</div>
+      <div style="display:flex;gap:24px">
+        <div style="width:200px;height:72px;border:2px dashed #1D1E20;border-radius:4px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:15px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;line-height:1.3;padding:0 12px;box-sizing:border-box">AISA logo<br>for approval</div>
+        <div style="width:200px;height:72px;border:2px dashed #1D1E20;border-radius:4px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:15px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;line-height:1.3;padding:0 12px;box-sizing:border-box">HTC logo<br>for approval</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
+      <div style="font-size:26px;font-weight:600;letter-spacing:0.02em;line-height:1;border:3px solid #1D1E20;padding:20px 32px;border-radius:999px;white-space:nowrap">{{ cta }}</div>
+      <div style="font-size:18px;line-height:1.3;text-align:right"><span style="border:2px dashed #1D1E20;padding:2px 10px;border-radius:4px;white-space:nowrap">{{ ctaNote }}</span></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1920,&quot;height&quot;:1080},&quot;eventTitle&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[CONFIRM: approved event title]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Confirmable content&quot;},&quot;description&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[CONFIRM: one-sentence description of the discussion]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Confirmable content&quot;},&quot;timeZone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[CONFIRM: time zone]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Confirmable content&quot;},&quot;venue&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[CONFIRM: venue and room]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Confirmable content&quot;},&quot;cta&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Registration details pending&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Confirmable content&quot;},&quot;ctaNote&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[CONFIRM: RSVP requirement and public URL]&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Confirmable content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const p = this.props;
+    return {
+      eventTitle: p.eventTitle || '[CONFIRM: approved event title]',
+      description: p.description || '[CONFIRM: one-sentence description of the discussion]',
+      timeZone: p.timeZone || '[CONFIRM: time zone]',
+      venue: p.venue || '[CONFIRM: venue and room]',
+      cta: p.cta || 'Registration details pending',
+      ctaNote: p.ctaNote || '[CONFIRM: RSVP requirement and public URL]'
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+| charcoal #1D1E20 on cream #FFF8F3 | 15.87:1 | Pass AA normal + large | Body, headline, labels, dashed placeholder borders, CTA outline |
+| green #2A7A57 on cream #FFF8F3 | 4.97:1 | Pass AA normal + large | Program label, co-branding tag, graphic strokes and circle |
+| cream #FFF8F3 on charcoal #1D1E20 | 15.87:1 | Pass AA normal + large | Status strip text |
+| charcoal #1D1E20 on green #2A7A57 | 3.19:1 | Pass large text only (3:1); fails normal text | Not used for text (fails normal text) |
+| green #2A7A57 on charcoal #1D1E20 | 3.19:1 | Pass large text only (3:1); fails normal text | Not used |
+| charcoal #1D1E20 on deskbg #EFE8E2 | 13.75:1 | Pass AA normal + large | Presentation view text |
+| green #2A7A57 on deskbg #EFE8E2 | 4.31:1 | Pass large text only (3:1); fails normal text | Non-text only in the presentation view (focal-region border, 3:1 graphic target met); section labels set in charcoal |

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DRAFT Banner Master</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="identity/tokens.css">
+<link rel="stylesheet" href="identity/components.css">
+<link rel="stylesheet" href="formats/1920x1080.css">
+<link rel="stylesheet" href="formats/1920x640.css">
+<link rel="stylesheet" href="formats/mobile-1080x1350.css">
+<style>body { margin: 0; background: var(--bk-color-field); }</style>
+</head>
+<body>
+<!--
+  One banner at 1:1, for review and PNG capture.
+  Pick the format with ?format=1920x1080 | 1920x640 | mobile-1080x1350
+-->
+<div id="banner"></div>
+
+<script src="core/kit.js"></script>
+<script src="event/content.js"></script>
+<script src="event/graphic.js"></script>
+<script src="formats/1920x1080.js"></script>
+<script src="formats/1920x640.js"></script>
+<script src="formats/mobile-1080x1350.js"></script>
+<script>
+  const id = new URLSearchParams(location.search).get('format') || '1920x1080';
+  const format = BannerKit.formats[id];
+  document.title = `DRAFT ${format.label} ${format.width}×${format.height}`;
+  BannerKit.mount(document.getElementById('banner'), id);
+</script>
+</body>
+</html>

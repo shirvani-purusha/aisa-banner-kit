@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DRAFT Banner Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Identity layer: tokens and shared component styles -->
+<link rel="stylesheet" href="identity/tokens.css">
+<link rel="stylesheet" href="identity/components.css">
+<!-- Formats: one stylesheet of measurements per layout -->
+<link rel="stylesheet" href="formats/1920x1080.css">
+<link rel="stylesheet" href="formats/1920x640.css">
+<link rel="stylesheet" href="formats/mobile-1080x1350.css">
+<!-- Review page -->
+<link rel="stylesheet" href="presentation/presentation.css">
+<link rel="stylesheet" href="editor/editor.css">
+</head>
+<body>
+<main id="presentation" class="pres"></main>
+
+<script src="core/kit.js"></script>
+<script src="event/content.js"></script>
+<script src="event/graphic.js"></script>
+<script src="formats/1920x1080.js"></script>
+<script src="formats/1920x640.js"></script>
+<script src="formats/mobile-1080x1350.js"></script>
+<script src="presentation/presentation-content.js"></script>
+<script src="presentation/presentation.js"></script>
+<script src="editor/editor.js"></script>
+<script>
+  BannerKit.renderPresentation(document.getElementById('presentation'));
+  if (!/[?&]noeditor\b/.test(location.search)) BannerKit.initEditor();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "aisa-banner-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DRAFT review banners for the proposed AISA × Howard Thurman Center Coffee and Conversation event",
+  "scripts": {
+    "capture": "node scripts/capture-pngs.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
